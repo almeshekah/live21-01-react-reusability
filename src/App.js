@@ -1,8 +1,15 @@
 import "./App.css";
+import { ThemeProvider } from "styled-components";
+import {GlobalStyle }from "src/components/styles.js";
 
+const theme = {
+  
+  backgroundColor: "#282c34", 
+  
+};
 const App = () => {
   return (
-    <div className="AppWrapper">
+    <GlobalStyle>
       <h2>When in doubt, ask for help!</h2>
 
       <div
@@ -31,7 +38,7 @@ const App = () => {
         <span className="Name">Hasan</span>
         <span className="GoToGithub">Go to GitHub</span>
       </div>
-    </div>
+    </GlobalStyle>
   );
 };
 
