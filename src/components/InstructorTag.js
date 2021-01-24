@@ -1,14 +1,15 @@
-import { TagWrapper,Emoji,Name ,GoToGithub}from "../Styles";
+import { TagWrapper, Emoji, Name, GoToGithub } from "./styles";
+
 const InstructorTag = (props) => {
   // Create the InstructorTag component here
-
+  const { name,emoji,github } = props;
   return <>
 
     <TagWrapper
-        onClick={() => window.open({props.instructor.Github})}
+        onClick={() => window.open(`https://github.com/${github}`)}
       >
-        <Emoji >{props.instructor.Emoji}</Emoji>
-        <Name>{props.instructor.Name}</Name>
+        <Emoji >{emoji}</Emoji>
+        <Name>{name}</Name>
         <GoToGithub>Go to GitHub</GoToGithub>
       </TagWrapper>
   

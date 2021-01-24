@@ -1,6 +1,8 @@
 import "./App.css";
 import { ThemeProvider } from "styled-components";
-import {GlobalStyle }from "src/components/styles.js";
+import data from "./data";
+import { AppWrapper } from "./components/styles";
+import InstructorTag from "./components/InstructorTag";
 
 const theme = {
   
@@ -8,37 +10,27 @@ const theme = {
   
 };
 const App = () => {
+
+  const Instructors = data.map((instructor) => (
+    <InstructorTag
+      key={instructor.id}
+      name={instructor.name}
+      github={instructor.github}
+      emoji={instructor.emoji}
+    />
+  ));
+
+
+
+
+
+
   return (
-    <GlobalStyle>
+    <AppWrapper>
       <h2>When in doubt, ask for help!</h2>
 
-      <div
-        className="TagWrapper"
-        onClick={() => window.open(`https://github.com/DarthHamza`)}
-      >
-        <span className="Emoji">🌚</span>
-        <span className="Name">Hamza</span>
-        <span className="GoToGithub">Go to GitHub</span>
-      </div>
-
-      <div
-        className="TagWrapper"
-        onClick={() => window.open(`https://github.com/Lailz`)}
-      >
-        <span className="Emoji">🐥</span>
-        <span className="Name">Laila</span>
-        <span className="GoToGithub">Go to GitHub</span>
-      </div>
-
-      <div
-        className="TagWrapper"
-        onClick={() => window.open(`https://github.com/thehasanas`)}
-      >
-        <span className="Emoji">🦍</span>
-        <span className="Name">Hasan</span>
-        <span className="GoToGithub">Go to GitHub</span>
-      </div>
-    </GlobalStyle>
+      {Instructors}
+    </AppWrapper>
   );
 };
 
