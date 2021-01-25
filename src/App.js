@@ -14,9 +14,7 @@ const App = () => {
   const Instructors = data.map((instructor) => (
     <InstructorTag
       key={instructor.id}
-      name={instructor.name}
-      github={instructor.github}
-      emoji={instructor.emoji}
+      {...instructor}
     />
   ));
 

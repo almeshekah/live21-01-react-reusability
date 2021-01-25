@@ -2,9 +2,9 @@ const data = [
 
     {
         id :1,
-        Emoji : "🌚",
-        Name : "Hamza" , 
-        Github :`https://github.com/DarthHamza`,
+        emoji : "🌚",
+        name : "Hamza" , 
+        github :`DarthHamza`,
 
     },
     
@@ -12,7 +12,7 @@ const data = [
         id :2,
         Emoji : "🐥",
         Name : "Laila" , 
-        Github :`https://github.com/Lailz`,
+        Github :`Lailz`,
 
     },
 
@@ -20,7 +20,7 @@ const data = [
         id :3,
         Emoji : "🦍",
         Name : "Hasan" , 
-        Github :`https://github.com/thehasanas`,
+        Github :`thehasanas`,
 
     },
     

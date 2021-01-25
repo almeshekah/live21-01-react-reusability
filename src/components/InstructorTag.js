@@ -1,8 +1,8 @@
 import { TagWrapper, Emoji, Name, GoToGithub } from "./styles";
 
-const InstructorTag = (props) => {
+const InstructorTag = ({ name,emoji,github } ) => {
   // Create the InstructorTag component here
-  const { name,emoji,github } = props;
+   
   return <>
 
     <TagWrapper
