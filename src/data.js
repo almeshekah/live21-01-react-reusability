@@ -10,17 +10,17 @@ const data = [
     
     {
         id :2,
-        Emoji : "🐥",
-        Name : "Laila" , 
-        Github :`Lailz`,
+        emoji : "🐥",
+        name : "Laila" , 
+        github :`Lailz`,
 
     },
 
     {
         id :3,
-        Emoji : "🦍",
-        Name : "Hasan" , 
-        Github :`thehasanas`,
+        emoji : "🦍",
+        name : "Hasan" , 
+        github :`thehasanas`,
 
     },
     

@@ -1,14 +1,10 @@
 import "./App.css";
-import { ThemeProvider } from "styled-components";
+
 import data from "./data";
 import { AppWrapper } from "./components/styles";
 import InstructorTag from "./components/InstructorTag";
 
-const theme = {
-  
-  backgroundColor: "#282c34", 
-  
-};
+
 const App = () => {
 
   const Instructors = data.map((instructor) => (
@@ -17,11 +13,6 @@ const App = () => {
       {...instructor}
     />
   ));
-
-
-
-
-
 
   return (
     <AppWrapper>

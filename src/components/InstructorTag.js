@@ -3,7 +3,7 @@ import { TagWrapper, Emoji, Name, GoToGithub } from "./styles";
 const InstructorTag = ({ name,emoji,github } ) => {
   // Create the InstructorTag component here
    
-  return <>
+  return (
 
     <TagWrapper
         onClick={() => window.open(`https://github.com/${github}`)}
@@ -15,7 +15,7 @@ const InstructorTag = ({ name,emoji,github } ) => {
   
   
   
-  </>;
+  );
 };
 
 export default InstructorTag;
